@@ -124,7 +124,7 @@ class UserLogic
 
             return $max_attempts - $attempts > 0
                 ? 'Неверно указан пароль. Осталось попыток: ' . ($max_attempts - $attempts) . '.'
-                : 'Неверно указан пароль.' . '<br>' . 'Попробуйте еще раз через ' .  SafeString::secondsToMinutesAndSeconds(LoginAttemptsLogic::timeUntilAllowedAttempt($user_id));
+                : 'Неверно указан пароль.' . '<br>' . 'Попробуйте еще раз через ' .  SafeString::secondsIntoMinutesAndSeconds(LoginAttemptsLogic::timeUntilAllowedAttempt($user_id));
         }
 
         LoginAttemptsLogic::resetAttempts($user_id);

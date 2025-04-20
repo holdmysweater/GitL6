@@ -15,7 +15,7 @@ class UserLogic
         ?string $gender,
         ?string $interests,
         ?string $vk,
-        ?int    $blood_type,
+        ?int $blood_type,
         ?string $factor,
         ?string $password_1,
         ?string $password_2

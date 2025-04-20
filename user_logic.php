@@ -93,7 +93,7 @@ class UserLogic
     public static function logIn(string $email, string $password) : ?string
     {
         if (Authorization::isAuthorized()) {
-            return 'Вы уже авторизованы';
+            return 'Вы уже авторизованы!';
         }
 
         $email = Validator::sanitizeEmail($email);

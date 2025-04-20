@@ -47,7 +47,7 @@ class UserLogic
             'address' => 'validateAddress',
             'gender' => 'validateGender',
             'interests' => 'validateInterests',
-            'vk' => 'validateVk',
+            'vk' => 'validateVK',
             'blood_type' => 'validateBloodType',
             'factor' => 'validateFactor',
             'password_1' => 'validatePassword'

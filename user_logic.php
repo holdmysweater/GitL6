@@ -24,7 +24,7 @@ class UserLogic
         $errors = [];
 
         if (Authorization::isAuthorized()) {
-            $errors['other'] = 'Вы уже авторизованы (перезагрузите страницу)';
+            $errors['other'] = 'Вы уже авторизованы (перезагрузите страницу).';
             return $errors;
         }
 

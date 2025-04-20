@@ -109,7 +109,7 @@ class UserLogic
 
         $user_id = $user_data['id'];
 
-        $time_until_attempt = LoginAttemptsLogic::timeUntilAllowedAttempt($user_id);
+        $time_until_attempt = LoginAttemptsLogic::timeUntilNextAllowedAttempt($user_id);
 
         if (0 !== $time_until_attempt) {
             return 'Превышено количество попыток входа в течение часа.' . '<br>'

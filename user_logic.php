@@ -104,7 +104,7 @@ class UserLogic
 
         $user_data = UserTable::getByEmail($email);
         if (null == $user_data) {
-            return 'Пользователь с таким email не найден';
+            return 'Пользователь с такой почтой не найден';
         }
 
         $user_id = $user_data['id'];

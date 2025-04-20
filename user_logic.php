@@ -37,7 +37,7 @@ class UserLogic
             $user = UserTable::getByEmail($email ?? null);
 
             if ($user) {
-                $errors['email'] = 'Пользователь с таким email уже существует';
+                $errors['email'] = 'Пользователь с такой почтой уже существует';
             }
         }
 

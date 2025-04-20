@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/user/user_table.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/user/user_tables.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/user/login_attempts_logic.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/user/validator.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/.helpers/safe_string.php');

@@ -19,7 +19,7 @@ class UserLogic
         ?string $factor,
         ?string $password_1,
         ?string $password_2
-    ) : ?array
+    ) : ?mixed
     {
         $errors = [];
 

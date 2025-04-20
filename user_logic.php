@@ -138,7 +138,7 @@ class UserLogic
         Authorization::unsetSessionUserId();
     }
 
-    public static function current() : ?array
+    public static function current() : ?mixed
     {
         $user_id = Authorization::getSessionUserId();
 
